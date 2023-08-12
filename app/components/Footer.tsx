@@ -2,6 +2,10 @@
 import type { NextComponentType } from 'next';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons"
+import { faFacebook, faTwitter, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 const Footer: NextComponentType = () => {
     const [showTopBtn, setShowTopBtn] = useState(false);
     useEffect(() => {
@@ -25,37 +29,33 @@ const Footer: NextComponentType = () => {
                 <div className='innerDiv'>
                     <div className='lg:flex justify-between items-center border-b mb-12'>
                         <div className='flex justify-between items-end lg:w-full pb-0 lg:pb-4'>
-                            <ul className='flex lg:mb-0 mb-3'>
-                                <li className='mr-3 text-white'>Follow us</li>
-                                <li className='mr-3'>
+                            <ul className='flex lg:mb-0 mb-3 text-white'>
+                                <li className='mr-6 text-white'>Follow us</li>
+                                <li className='mr-4'>
                                     <Link href="#" target='_blank' rel='noreferrer' className='text-primary text-xl'>
-                                        <i className='fab fa-instagram'></i>
+                                        <FontAwesomeIcon icon={faFacebook} className="text-white" />
                                     </Link>
                                 </li>
-                                <li className='mr-3'>
+                                <li className='mr-4'>
                                     <Link href="#" target='_blank' rel='noreferrer' className='text-primary text-xl'>
-                                        <i className='fab fa-twitter'></i>
+                                        <FontAwesomeIcon icon={faInstagram} className="text-white" />
                                     </Link>
                                 </li>
-                                <li className='mr-3'>
+                                <li className='mr-4'>
                                     <Link href="#" target='_blank' rel='noreferrer' className='text-primary text-xl'>
-                                        <i className='fab fa-facebook'></i>
+                                        <FontAwesomeIcon icon={faWhatsapp} className="text-white" />
                                     </Link>
                                 </li>
-                                <li className='mr-3'>
+                                <li className='mr-4'>
                                     <Link href="#" target='_blank' rel='noreferrer' className='text-primary text-xl'>
-                                        <i className='fab fa-linkedin'></i>
-                                    </Link>
-                                </li>
-                                <li className='mr-3'>
-                                    <Link href="#" target='_blank' rel='noreferrer' className='text-primary text-xl'>
-                                        <i className='fab fa-quora'></i>
+                                        <FontAwesomeIcon icon={faTwitter} className="text-white" />
                                     </Link>
                                 </li>
                             </ul>
                             {showTopBtn && (
                                 <Link href="#" className='text-white sm:text-4xl text-2xl sm:right-[50px] right-[20px] cursor-pointer' onClick={goToTop}>
-                                    <i className='text-[22px] pb-4 lg:pb-0 fat fa-circle-arrow-up'></i>
+                                    {/* <i className='text-[22px] pb-4 lg:pb-0 fat fa-circle-arrow-up'></i> */}
+                                    <FontAwesomeIcon icon={faArrowCircleUp} className="text-[22px]" />
                                 </Link>
                             )}
                         </div>
@@ -98,34 +98,44 @@ const Footer: NextComponentType = () => {
                         </div>
                         <div className='sm:w-1/3 sm:mb-0 mb-6'>
                             <h4 className='font-medium text-secondary text-[16px] lg:text-xl mb-3' >
-                                Highlights
+                                Quick Links
                             </h4>
                             <ul
                                 className='footerLink'
                             >
                                 <li className='mb-2'>
                                     <Link href="#" target='_blank' className='text-white text-sm'>
-                                        Bits
+                                        Home
                                     </Link>
                                 </li>
                                 <li className='mb-2'>
                                     <Link href="#" target='_blank' className='text-white text-sm'>
-                                        Asked
+                                        The Chamber
                                     </Link>
                                 </li>
                                 <li className='mb-2'>
                                     <Link href="#" target='_blank' className='text-white text-sm'>
-                                        Study help
+                                        Services
                                     </Link>
                                 </li>
                                 <li className='mb-2'>
                                     <Link href="#" target='_blank' className='text-white text-sm'>
-                                        Padhaai
+                                        International
                                     </Link>
                                 </li>
                                 <li className='mb-2'>
                                     <Link href="#" target='_blank' className='text-white text-sm'>
-                                        Group
+                                        Membership
+                                    </Link>
+                                </li>
+                                <li className='mb-2'>
+                                    <Link href="#" target='_blank' className='text-white text-sm'>
+                                        Publication
+                                    </Link>
+                                </li>
+                                <li className='mb-2'>
+                                    <Link href="#" target='_blank' className='text-white text-sm'>
+                                        Contact
                                     </Link>
                                 </li>
                             </ul>
@@ -144,22 +154,7 @@ const Footer: NextComponentType = () => {
                                 </li>
                                 <li className='mb-2'>
                                     <Link href="#" target='_blank' className='text-white text-sm'>
-                                        Cookie Policy
-                                    </Link>
-                                </li>
-                                <li className='mb-2'>
-                                    <Link href="#" target='_blank' className='text-white text-sm'>
-                                        Terms of Service
-                                    </Link>
-                                </li>
-                                <li className='mb-2'>
-                                    <Link href="#" target='_blank' className='text-white text-sm'>
-                                        Community Standards
-                                    </Link>
-                                </li>
-                                <li className='mb-2'>
-                                    <Link href="#" target='_blank' className='text-white text-sm'>
-                                        How our Business Works
+                                        Terms & Conditions
                                     </Link>
                                 </li>
                             </ul>

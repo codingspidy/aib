@@ -53,10 +53,10 @@ const UpcomingEvents: NextComponentType = () => {
                                             alt=""
                                         />
                                     </div>
-                                    <div className="text-lg lg:text-[22px] font-medium mb-[7px]">
+                                    <div className="text-lg text-primary lg:text-[22px] font-medium mb-[6px]">
                                         Empowering Women
                                     </div>
-                                    <div className='text-secondary font-[500]'>
+                                    <div className='text-black font-[500]'>
                                         19.08.2022
                                     </div>
                                     {/* <Link href="" className="text-primary text-lg lg:text-xl">
@@ -76,10 +76,10 @@ const UpcomingEvents: NextComponentType = () => {
                                             alt=""
                                         />
                                     </div>
-                                    <div className="text-lg lg:text-[22px] font-medium mb-[7px]">
+                                    <div className="text-lg text-primary lg:text-[22px] font-medium mb-[6px]">
                                         Empowering Women
                                     </div>
-                                    <div className='text-secondary font-[500]'>
+                                    <div className='text-black font-[500]'>
                                         19.08.2022
                                     </div>
                                     {/* <Link href="" className="text-primary text-lg lg:text-xl">
@@ -99,10 +99,10 @@ const UpcomingEvents: NextComponentType = () => {
                                             alt=""
                                         />
                                     </div>
-                                    <div className="text-lg lg:text-[22px] font-medium mb-[7px]">
+                                    <div className="text-lg text-primary lg:text-[22px] font-medium mb-[6px]">
                                         Empowering Women
                                     </div>
-                                    <div className='text-secondary font-[500]'>
+                                    <div className='text-black font-[500]'>
                                         19.08.2022
                                     </div>
                                     {/* <Link href="" className="text-primary text-lg lg:text-xl">
@@ -122,10 +122,10 @@ const UpcomingEvents: NextComponentType = () => {
                                             alt=""
                                         />
                                     </div>
-                                    <div className="text-lg lg:text-[22px] font-medium mb-[7px]">
+                                    <div className="text-lg text-primary lg:text-[22px] font-medium mb-[6px]">
                                         Empowering Women
                                     </div>
-                                    <div className='text-secondary font-[500]'>
+                                    <div className='text-black font-[500]'>
                                         19.08.2022
                                     </div>
                                     {/* <Link href="" className="text-primary text-lg lg:text-xl">
@@ -145,10 +145,10 @@ const UpcomingEvents: NextComponentType = () => {
                                             alt=""
                                         />
                                     </div>
-                                    <div className="text-lg lg:text-[22px] font-medium mb-[7px]">
+                                    <div className="text-lg text-primary lg:text-[22px] font-medium mb-[6px]">
                                         Empowering Women
                                     </div>
-                                    <div className='text-secondary font-[500]'>
+                                    <div className='text-black font-[500]'>
                                         19.08.2022
                                     </div>
                                     {/* <Link href="" className="text-primary text-lg lg:text-xl">

@@ -6,19 +6,21 @@ import Link from 'next/link'
 import UpcomingEvents from './components/UpcomingEvents'
 import Patron from './components/Patron'
 import Chamber from './components/Chamber'
+import States from './components/States'
+import Sectors from './components/Sectors'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Hero />
-      <section className="py-7 bg-[#f1f3f4]">
+      <section className="pt-7 pb-16">
         <div className='innerDiv'>
           <div className='flex flex-wrap items-center justify-center gap-6'>
             <div className='flex py-4 px-6 gap-3 items-center rounded-md facility-card bg-[#ccf2ff] text-[#025f80]'>
               <FontAwesomeIcon className="text-[26px]" icon={faCalendarMinus} />
               <p className='text-sm max-w-[130px] text-center'>Current Events</p>
             </div>
-            <div className='flex py-4 px-6 gap-3 items-center rounded-md facility-card bg-[#ddffcc] text-[#008000]'>
+            <div className='flex py-4 px-6 gap-3 items-center rounded-md facility-card bg-[#EFE1D1] text-[#331D2C]'>
               <FontAwesomeIcon className="text-[26px]" icon={faUserSecret} />
               <p className='text-sm max-w-[130px] text-center'>Business Advice</p>
             </div>
@@ -30,7 +32,7 @@ export default function Home() {
               <FontAwesomeIcon className="text-[26px]" icon={faPlaneDeparture} />
               <p className='text-sm max-w-[130px] text-center'>International Events</p>
             </div>
-            <div className='flex py-4 px-6 gap-3 items-center rounded-md facility-card bg-[#ccf2ff] text-[#025f80]'>
+            <div className='flex py-4 px-6 gap-3 items-center rounded-md facility-card bg-[#ddffcc] text-[#008000]'>
               <FontAwesomeIcon className="text-[26px]" icon={faTruckRampBox} />
               <p className='text-sm max-w-[130px] text-center'>Invest & Trade with India</p>
             </div>
@@ -39,6 +41,8 @@ export default function Home() {
       </section>
       <UpcomingEvents />
       <Chamber />
+      <Sectors />
+      <States />
       <Patron />
     </main>
   )

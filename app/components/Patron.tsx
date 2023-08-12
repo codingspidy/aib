@@ -20,13 +20,13 @@ import Image from 'next/image';
 
 const Patron:NextComponentType = () => {
   return (
-    <section id="patronSection" className={`section news-section py-16 md:py-28`}>
+    <section id="patronSection" className={`section pt-10 pb-7 md:pt-16 md:pb-10`}>
     <div className='innerDiv mx-auto'>
-      <h3 className='text-center sm:text-3xl text-2xl text-primary font-medium mb-[50px] md:text-4xl'>Patron Members</h3>
+      <h3 className='text-center sm:text-3xl text-2xl text-primary font-[600] mb-[60px] md:text-4xl'>Patron Members</h3>
       <div className=''>
         <Swiper
           className='mySwiper flex items-center justify-between mb-2'
-          modules={[Autoplay, Pagination]}
+          modules={[Autoplay]}
           //spaceBetween={30}
           //slidesPerView={8}
           breakpoints={{
@@ -56,54 +56,53 @@ const Patron:NextComponentType = () => {
             //  // spaceBetween: 30,
             // },
           }}
-          pagination={{ clickable: true, dynamicBullets: true }}
           autoplay
           loop
           >
           <SwiperSlide>
             <div className='mx-6'>
-              <Image src={patron1} height='48' width='110' alt='' />
+              <Image src={patron1} className="w-[120px]" alt='' />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='mx-6'>
-              <Image src={patron2} height='44' width='110' alt='' />
+              <Image src={patron2} className="w-[120px]" alt='' />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='mx-6'>
-              <Image src={patron3} height='35' width='110' alt='' />
+              <Image src={patron3} className="w-[120px]" alt='' />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='mx-6'>
-              <Image src={patron4} height='59' width='110' alt='' />
+              <Image src={patron4} className="w-[120px]" alt='' />
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
             <div className='mx-6'>
-              <Image src={patron5} height='110' width='110' alt='' />
+              <Image src={patron5} className="w-[120px]" alt='' />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='mx-6'>
-              <Image src={patron6} height='61' width='110' alt='' />
+              <Image src={patron6} className="w-[120px]" alt='' />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='mx-6'>
-              <Image src={patron7} height='120' width='110' alt='' />
+              <Image src={patron7} className="w-[120px]" alt='' />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='mx-6'>
-              <Image src={patron3} width='110' height='42' alt='' />
+              <Image src={patron3} className="w-[120px]" alt='' />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='mx-6'>
-              <Image src={patron4} width='110' height='42' alt='' />
+              <Image src={patron4} className="w-[120px]" alt='' />
             </div>
           </SwiperSlide>
         </Swiper>

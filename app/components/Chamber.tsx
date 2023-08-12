@@ -17,7 +17,7 @@ const Chamber: NextComponentType = () => {
                     <div className="flex flex-wrap gap-5 sm:-mx-3 items-center justify-between">
                         <div className="sm:px-3 lg:w-1/2 w-full relative">
                             <div className="relative z-10">
-                                <Image src={tabImages} width={800} height={537} alt="" className="rounded-[30px]" />
+                                <Image src={tabImages} width={800} height={537} alt="" className="rounded-[20px] md:rounded-[30px]" />
                                 <div
                                     onClick={() => {
                                         setFullScreen(!isFullScreen);
@@ -31,7 +31,7 @@ const Chamber: NextComponentType = () => {
                             <h4 className="text-white text-[36px] xl:text-[50px] lg:text-[42px] md:text-[36px] font-[600] capitalize">the chamber</h4>
                             <p className="xl:text-[19px] text-[17px] text-white mt-3">Founded in 1925, Indian Chamber of Commerce (ICC) is the leading and only National Chamber of Commerce having headquarter in Kolkata, and one of the most pro-active and forward-looking Chambers in the country today. Its membership spans some of the most prominent and major industrial groups in India. ICC’s forte is its ability to</p>
                             <div className="mt-6">
-                                <a className="inline-block py-3 sm:px-8 px-6 font-[500] border-2 border-primary rounded-[30px] text-white bg-primary cursor-pointer" href="">Read more</a>
+                                <a className="inline-block py-3 sm:px-8 px-6 font-[500] border-2 border-primary rounded-[30px] text-black bg-secondary cursor-pointer" href="">Read more</a>
                             </div>
                         </div>
                     </div>

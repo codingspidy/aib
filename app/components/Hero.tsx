@@ -15,12 +15,12 @@ import Link from 'next/link';
 
 const Hero: NextComponentType = () => {
     return (
-        <section className='bg-[#f1f3f4]'>
+        <section className=''>
             <div className="innerDiv">
                 <div className="flex flex-col lg:flex-row gap-6 pt-20 lg:pt-36 pb-20">
                     <div>
                         <h1 className="text-[36px] font-[600] text-primary leading-none">Welcome to Association of International Businessmen</h1>
-                        <p className="text-secondary font-[400] mt-10">Facilitating Business Since 1925</p>
+                        <p className="text-secondary font-[500] mt-10">Facilitating Business Since 1925</p>
                         <p className="text-primary mt-2">The Indian Chamber of Commerce, or ICC as it is popularly known, is the premier body of business and industry and only National Chamber of Commerce having headquarter in Kolkata.</p>
                     <Link href='#' className="bg-secondary text-primary font-500 inline-block mt-3 py-2 px-4">Know More</Link>
                     </div>
