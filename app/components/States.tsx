@@ -1,10 +1,10 @@
 import type { NextComponentType } from "next";
 import Image from "next/image";
 import circleImg from "../images/circle-map.png";
-import iitDelhiImg from "../images/IIT.png"
-import iiitDelhiImg from "../images/IIIT.png";
-import jamiaImg from "../images/jamia.png";
-import delhiTechnicalImg from "../images/dtu.png";
+import IndiaGate from "../images/india-gate.jpg"
+import CharMinar from "../images/char-minar.jpg";
+import Pune from "../images/pune.jpg";
+import Chennai from "../images/chennai.jpg";
 import UniversityLogo from "../images/university-logo.png";
 
 const States: NextComponentType = () => {
@@ -23,10 +23,10 @@ const States: NextComponentType = () => {
                                 <Image src={circleImg} width={656} height={607} alt="" objectFit="contain" />
                                 <div className="absolute top-0 left-[50%] translate-x-[-50%] hover-effect">
                                     <div className="card-smaill cursor-pointer">
-                                        <Image src={iitDelhiImg} width={180} height={180} alt="" className="object-cover w-[180px] h-[180px]" />
+                                        <Image src={IndiaGate} alt="" className="object-cover min-w-[120px] min-h-[120px] md:w-[180px] md:h-[180px]" />
                                     </div>
                                 </div>
-                                <div className="card bg-white rounded-[21px] z-[100] w-[297px] absolute sm:bottom-[5%] bottom-0 left-[50%]">
+                                {/* <div className="card bg-white rounded-[21px] z-[100] w-[297px] absolute sm:bottom-[5%] bottom-0 left-[50%]">
                                     <Image src={iitDelhiImg} width={297} height={146} alt="" className="rounded-t-[21px]" />
                                     <div className="UniversityLogo mx-auto text-center mt-[-40px]">
                                         <Image src={UniversityLogo} width={70} height={70} alt="w-[70px] h-[70px]" />
@@ -36,13 +36,13 @@ const States: NextComponentType = () => {
                                         <p className="text-[#5C5C5C] text-center">New Delhi, India</p>
                                         <h3 className="text-center font-[500] text-[24px]">Ranked 4 For Overall By NIRF 2022</h3>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="absolute top-[50%] sm:left-[50px] hover-effect2 left-[20px] translate-y-[-50%] cursor-pointer">
                                     <div className="card-xs">
-                                        <Image src={jamiaImg} width={100} height={100} alt="" className="w-[100px] h-[100px]" />
+                                        <Image src={Pune} alt="" className="min-w-[80px] min-h-[80px] md:w-[100px] md:h-[100px]" />
                                     </div>
                                 </div>
-                                <div className="card bg-white rounded-[21px] z-[100] w-[297px] absolute sm:bottom-[5%] bottom-0 left-[50%] translate-x-[-50%]">
+                                {/* <div className="card bg-white rounded-[21px] z-[100] w-[297px] absolute sm:bottom-[5%] bottom-0 left-[50%] translate-x-[-50%]">
                                     <Image src={jamiaImg} width={297} height={146} alt="" className="rounded-t-[21px]" />
                                     <div className="UniversityLogo mx-auto text-center mt-[-40px]">
                                         <Image src={UniversityLogo} width={70} height={70} alt="" className="w-[70px] h-[70px]" />
@@ -52,13 +52,13 @@ const States: NextComponentType = () => {
                                         <p className="text-[#5C5C5C] text-center">New Delhi, India</p>
                                         <h3 className="text-center font-[500] text-[24px]">Ranked 13 For Overall By NIRF</h3>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="hover-effect3 cursor-pointer absolute top-[50%] sm:right-[50px] right-[25px] translate-y-[-50%] eff">
                                     <div className="card-xs">
-                                        <Image src={delhiTechnicalImg} width={90} height={90} alt="" className="w-[90px] h-[90px]" />
+                                        <Image src={CharMinar} alt="" className="w-[70px] h-[70px] md:w-[90px] md:h-[90px]" />
                                     </div>
                                 </div>
-                                <div className="card bg-white rounded-[21px] z-[100] w-[297px] absolute sm:bottom-[5%] bottom-0 left-[50%] translate-x-[-50%]">
+                                {/* <div className="card bg-white rounded-[21px] z-[100] w-[297px] absolute sm:bottom-[5%] bottom-0 left-[50%] translate-x-[-50%]">
                                     <Image src={delhiTechnicalImg} width={297} height={146} alt="" className="rounded-t-[21px]" />
                                     <div className="UniversityLogo mx-auto text-center mt-[-40px]">
                                         <Image src={UniversityLogo} width={70} height={70} alt="" className="w-[70px] h-[70px]" />
@@ -68,13 +68,13 @@ const States: NextComponentType = () => {
                                         <p className="text-[#5C5C5C] text-center">New Delhi, India</p>
                                         <h3 className="text-center font-[500] text-[24px]">Ranked 63 For Overall By NIRF 2022</h3>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="hover-effect4 cursor-pointer absolute left-[50%] sm:bottom-[30px] bottom-[10px] translate-x-[-50%]">
                                     <div className="card-xs">
-                                        <Image src={iiitDelhiImg} width={80} height={80} alt="" className="w-[80px] h-[80px]" />
+                                        <Image src={Chennai} alt="" className="min-w-[60px] min-h-[60px] md:w-[80px] md:h-[80px]" />
                                     </div>
                                 </div>
-                                <div className="card bg-white rounded-[21px] z-[100] w-[297px] absolute sm:bottom-[0] bottom-0 left-[50%] translate-x-[-50%]">
+                                {/* <div className="card bg-white rounded-[21px] z-[100] w-[297px] absolute sm:bottom-[0] bottom-0 left-[50%] translate-x-[-50%]">
                                     <Image src={iiitDelhiImg} width={297} height={146} alt="" className="rounded-t-[21px]" />
                                     <div className="UniversityLogo mx-auto text-center mt-[-40px]">
                                         <Image src={UniversityLogo} width={70} height={70} alt="" className="w-[70px] h-[70px]" />
@@ -84,7 +84,7 @@ const States: NextComponentType = () => {
                                         <p className="text-[#5C5C5C] text-center">New Delhi, India</p>
                                         <h3 className="text-center font-[500] text-[24px]">Ranked 151 For Overall By NIRF 2022</h3>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

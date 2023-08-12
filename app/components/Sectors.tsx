@@ -11,7 +11,7 @@ const Sectors: NextComponentType = () => {
         >
             <div className="innerDiv py-2 md:flex gap-4 items-center">
                 <div className="flex flex-col text-black gap-6">
-                    <div className="flex lg:block gap-x-2 w-fit mx-auto lg:mx-0">
+                    <div className="flex items-center lg:block gap-x-2 w-fit mx-auto lg:mx-0">
                         <h3 className="text-[36px] lg:text-[54px] md:text-[42px] font-[700] text-center lg:text-left text-primary capitalize leading-none">AIB</h3>
                         <h3 className="text-[36px] lg:text-[54px] md:text-[42px] font-[700] text-center lg:text-left capitalize">Sectors</h3>
                     </div>
