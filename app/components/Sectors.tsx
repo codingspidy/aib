@@ -13,14 +13,14 @@ const Sectors: NextComponentType = () => {
                 <div className="flex flex-col text-black gap-6">
                     <div className="flex items-center lg:block gap-x-2 w-fit mx-auto lg:mx-0">
                         <h3 className="text-[36px] lg:text-[54px] md:text-[42px] font-[700] text-center lg:text-left text-primary capitalize leading-none">AIB</h3>
-                        <h3 className="text-[36px] lg:text-[54px] md:text-[42px] font-[700] text-center lg:text-left capitalize">Sectors</h3>
+                        <h3 className="text-[36px] lg:text-[54px] md:text-[42px] font-[700] text-center lg:text-left text-primary capitalize">Sectors</h3>
                     </div>
                     <div className="text-center md:text-base md:text-left">
                         <p className="md:text-[20px] lg:text-[24px] font-[500] leading-normal">
                             We are currently involved in the following sectors -
                         </p>
-                        <p className='md:text-[20px] lg:text-[24px] font-[500] leading-normal'>Education, Logistic Supply Chain,
-                            tourism, it, ites, startup, psu, tea, chemical, health, testile, jute, young leader.</p>
+                        <p className='md:text-[20px] lg:text-[24px] font-[500] leading-normal'>Education, Logistics Supply Chain,
+                            Tourism, IT, ITES, Startup, PSUs, Tea, Chemical, Health, Textile, Jute, Young Leaders.</p>
                     </div>
                     {/* <div className="flex mb-12 md:mt-4">
                         <button

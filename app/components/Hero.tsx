@@ -7,9 +7,12 @@ import "swiper/css/navigation";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import slide1 from "../images/conf-1.jpg";
-import slide2 from "../images/conf-2.jpg";
-import slide3 from "../images/conf-3.jpg";
+import slide1 from "../images/event1.jpg";
+import slide2 from "../images/event2.jpg";
+import slide3 from "../images/event3.jpg";
+import slide4 from "../images/event4.jpg";
+import slide5 from "../images/event5.jpg";
+
 import Image from "next/image";
 import Link from 'next/link';
 
@@ -21,8 +24,9 @@ const Hero: NextComponentType = () => {
                     <div>
                         <h1 className="text-[36px] font-[600] text-primary leading-none">Welcome to Association of International Businessmen</h1>
                         <p className="text-secondary font-[500] mt-10">Facilitating Business Since 1925</p>
-                        <p className="text-primary mt-2">The Indian Chamber of Commerce, or ICC as it is popularly known, is the premier body of business and industry and only National Chamber of Commerce having headquarter in Kolkata.</p>
-                    <Link href='#' className="bg-secondary text-primary font-500 inline-block mt-3 py-2 px-4">Know More</Link>
+                        <p className="text-primary mt-2">Association of International Businessmen aims to make significant strides in emphasizing the need for effective use of association in various businesses. Consolidating its position as a center for  promoting bilateral trade, AIB offers a vast range of services fro augmenting skills, creating a plateform for interaction/cooperation, disseminating valuable information and data and in turn enhancing business opportunities.
+                        </p>
+                        <Link href='#' className="bg-secondary text-primary font-500 inline-block mt-3 py-2 px-4">Know More</Link>
                     </div>
                     <div id="introSwiper" className="relative h-[300px] w-full lg:max-w-[600px]">
                         {/* <div className="absolute w-full h-full inset-0 z-10 bg-black/50"></div> */}
@@ -50,8 +54,15 @@ const Hero: NextComponentType = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <Image
-                                    className=" h-[300px] w-full max-w-[600px] product-image object-cover"
-                                    src={slide3}
+                                    className="h-[300px] w-full max-w-[600px] product-image object-cover object-top"
+                                    src={slide4}
+                                    alt=""
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="h-[300px] w-full max-w-[600px] product-image object-cover"
+                                    src={slide5}
                                     alt=""
                                 />
                             </SwiperSlide>

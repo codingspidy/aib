@@ -55,7 +55,7 @@ const Footer: NextComponentType = () => {
                             {showTopBtn && (
                                 <Link href="#" className='text-white sm:text-4xl text-2xl sm:right-[50px] right-[20px] cursor-pointer' onClick={goToTop}>
                                     {/* <i className='text-[22px] pb-4 lg:pb-0 fat fa-circle-arrow-up'></i> */}
-                                    <FontAwesomeIcon icon={faArrowCircleUp} className="text-[22px]" />
+                                    <FontAwesomeIcon icon={faArrowCircleUp} className="text-[22px] pb-4 lg:pb-0" />
                                 </Link>
                             )}
                         </div>
@@ -81,18 +81,18 @@ const Footer: NextComponentType = () => {
                                 Contact us
                             </h4>
                             <ul
-                                className='footerLink max-w-[250px]'
+                                className='footerLink max-w-[300px]'
                             >
                                 <li className='mb-2'>
-                                    Indian Chamber of Commerce
-                                    4, India Exchange Place,
-                                    Kolkata-700001
+                                    <p>Association of International Businessmen
+                                    SD-154, Sector-45, Noida-201303,</p>
+                                     UP, India
                                 </li>
                                 <li className='mb-2'>
-                                    Phone : +91-33-22303242-44
+                                    Mobile : +91-8920962397
                                 </li>
                                 <li className='mb-2'>
-                                    Email: ceo@indianchamber.net
+                                    Email: info@aibusinessmen.com
                                 </li>
                             </ul>
                         </div>

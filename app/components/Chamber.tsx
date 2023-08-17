@@ -12,7 +12,7 @@ const Chamber: NextComponentType = () => {
     const [isFullScreen, setFullScreen] = useState(false);
     return (
         <>
-            <section className="pt-[60px] pb-[60px] md:py-[120px] bg-white clippath-section">
+            <section className="pt-[60px] pb-[60px] md:py-[150px] bg-white clippath-section">
                 <div className="innerDiv mx-auto">
                     <div className="flex flex-wrap gap-5 sm:-mx-3 items-center justify-between">
                         <div className="sm:px-3 lg:w-1/2 w-full relative">
@@ -29,7 +29,7 @@ const Chamber: NextComponentType = () => {
                         </div>
                         <div className="sm:px-3 lg:w-5/12 w-full">
                             <h4 className="text-white text-[36px] xl:text-[50px] lg:text-[42px] md:text-[36px] font-[600] capitalize">the chamber</h4>
-                            <p className="xl:text-[19px] text-[17px] text-white mt-3">Founded in 1925, Indian Chamber of Commerce (ICC) is the leading and only National Chamber of Commerce having headquarter in Kolkata, and one of the most pro-active and forward-looking Chambers in the country today. Its membership spans some of the most prominent and major industrial groups in India. ICC’s forte is its ability to</p>
+                            <p className="xl:text-[19px] text-[17px] text-white mt-3">Association of International Businessmen aims to make significant strides in emphasizing the need for effective use of association in various businesses. Consolidating its position as a center for  promoting bilateral trade, AIB offers a vast range of services fro augmenting skills, creating a plateform for interaction/cooperation, disseminating valuable information and data and in turn enhancing business opportunities.</p>
                             <div className="mt-6">
                                 <a className="inline-block py-3 sm:px-8 px-6 font-[500] border-2 border-primary rounded-[30px] text-black bg-secondary cursor-pointer" href="">Read more</a>
                             </div>

@@ -15,12 +15,12 @@ const States: NextComponentType = () => {
                     <div className="flex flex-wrap sm:-mx-3 justify-between items-center">
                         <div className="xl:w-1/2 w-full sm:px-3 text-center lg:text-left lg:order-3 mt-9 lg:mt-0">
                             <h3 className="text-[36px] lg:text-[54px] md:text-[42px] font-[700] text-primary capitalize leading-none">AIB</h3>
-                            <h3 className="text-[36px] lg:text-[54px] md:text-[42px] font-[700] capitalize">campuses</h3>
-                            <p className="md:text-[20px] lg:text-[24px] font-[500] mt-2">We are currently located at New Delhi, Hyderabad, Bangalore, Chennai, Kerala, Pune and Kolkata.</p>
+                            <h3 className="text-[36px] lg:text-[54px] md:text-[42px] font-[700] text-primary capitalize">Offices</h3>
+                            <p className="md:text-[20px] lg:text-[24px] font-[500] mt-2">Along With Headquarter AIB  has 8 branches in India. Delhi, Bangalore, Hyderabad, Kolkata, Kochi,Chennai, Mumbai and Pune.</p>
                         </div>
                         <div className="xl:w-5/12 w-full sm:px-3 relative">
                             <div className="relative circle-img">
-                                <Image src={circleImg} width={656} height={607} alt="" objectFit="contain" />
+                                <Image src={circleImg} width={656} height={607} alt="" className="object-contain" />
                                 <div className="absolute top-0 left-[50%] translate-x-[-50%] hover-effect">
                                     <div className="card-smaill cursor-pointer">
                                         <Image src={IndiaGate} alt="" className="object-cover min-w-[120px] min-h-[120px] md:w-[180px] md:h-[180px]" />

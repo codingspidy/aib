@@ -228,9 +228,9 @@ footer {
 }
 
 #patronSection {
-  .mySwiper {
-    display: flex !important;
-    align-items: baseline !important;
+  .swiper {
+    width: fit-content;
+    margin-inline: auto;
   }
   .swiper-pagination {
     margin-top: 10px !important;
