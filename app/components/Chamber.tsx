@@ -31,7 +31,7 @@ const Chamber: NextComponentType = () => {
                             <h4 className="text-white text-[36px] xl:text-[50px] lg:text-[42px] md:text-[36px] font-[600] capitalize">the chamber</h4>
                             <p className="xl:text-[19px] text-[17px] text-white mt-3">Association of International Businessmen aims to make significant strides in emphasizing the need for effective use of association in various businesses. Consolidating its position as a center for  promoting bilateral trade, AIB offers a vast range of services fro augmenting skills, creating a plateform for interaction/cooperation, disseminating valuable information and data and in turn enhancing business opportunities.</p>
                             <div className="mt-6">
-                                <a className="inline-block py-3 sm:px-8 px-6 font-[500] border-2 border-primary rounded-[30px] text-black bg-secondary cursor-pointer" href="">Read more</a>
+                                <a className="inline-block py-3 sm:px-8 px-6 font-[500] border-2 border-primary rounded-[30px] text-primary bg-secondary cursor-pointer" href="">Read more</a>
                             </div>
                         </div>
                     </div>

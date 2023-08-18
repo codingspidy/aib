@@ -71,35 +71,35 @@ const Contact: NextPage = () => {
 
     return (
         <>
-            <section className='pt-[125px] sm:pt-[140px] lg:pt-[160px]'>
+            <section className='pt-[125px]'>
                 <div className="pb-[70px]">
                     <div className='innerDiv mx-auto'>
                         <div className='grid lg:grid-cols-2 gap-8 lg:items-start'>
                             <div className='bg-primary lg:order-2 text-white py-12 lg:px-12 px-6 lg:mb-0 mb-6 rounded-xl'>
                                 <h3 className='md:text-4xl text-2xl font-medium mb-3'>How can we help?</h3>
-                                <p className=''>Have questions or need to report an issue with a Uvera product or service? We&#39;ve got you covered.</p>
+                                <p className=''>Have questions or need to report an issue with any AIB service? We&#39;ve got you covered.</p>
                                 <ul className='mt-6 '>
                                     <li className='mb-4'>
-                                        <a href='mailto:admissions@gurucool.xyz' className='flex items-center'>
+                                        <a href='mailto:info@aibusinessmen.com' className='flex items-center'>
                                             <span className='flex items-center justify-center md:h-12 md:w-12 w-9 h-9 rounded-full md:text-xl text-sm'>
-                                                <FontAwesomeIcon className="text-primary" icon={faEnvelope} />
+                                                <FontAwesomeIcon className="text-white" icon={faEnvelope} />
                                             </span>
-                                            <span className='ml-3 md:text-lg text-base font-medium'>unicusmobility@gmail.com</span>
+                                            <span className='ml-3 md:text-lg text-base font-medium'>info@aibusinessmen.com</span>
                                         </a>
                                     </li>
                                     <li className='mb-4'>
                                         <a className='flex items-center'>
                                             <span className='flex items-center justify-center md:h-12 md:w-12 w-9 h-9 rounded-full md:text-xl text-sm'>
-                                                <FontAwesomeIcon className="text-primary" icon={faPhone} />
+                                                <FontAwesomeIcon className="text-white" icon={faPhone} />
                                             </span>
-                                            <span className='ml-3 md:text-lg text-base font-medium'>+91 9718122534</span>
+                                            <span className='ml-3 md:text-lg text-base font-medium'>+91 8920962397</span>
                                         </a>
                                     </li>
                                     <li className='mb-4'>
                                         <a className='flex items-center'>
                                             <span className='flex items-center justify-center md:h-12 md:w-12 w-9 h-9 rounded-full md:text-xl text-sm'>
-                                                <FontAwesomeIcon className="text-primary" icon={faWhatsapp} />                                            </span>
-                                            <span className='ml-3 md:text-lg text-base font-medium'>+91 9718122534</span>
+                                                <FontAwesomeIcon className="text-white" icon={faPhone} />                                            </span>
+                                            <span className='ml-3 md:text-lg text-base font-medium'>+91 9671658857</span>
                                         </a>
                                     </li>
                                     {/* <li className='mb-4'>
@@ -224,7 +224,7 @@ const Contact: NextPage = () => {
                                     <p>Email: ceo@indianchamber.net</p>
                                 </div>
                                 <div className='max-w-[350px]'>
-                                    <h4 className="text-[18px] font-[500]">Bihar Office</h4>
+                                    <h4 className="text-[18px] font-[500]">Kochi Office</h4>
                                     <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
                                     <p>Contact :- 033-22534200</p>
                                     <p>Email: ceo@indianchamber.net</p>
@@ -236,7 +236,13 @@ const Contact: NextPage = () => {
                                     <p>Email: ceo@indianchamber.net</p>
                                 </div>
                                 <div className='max-w-[350px]'>
-                                    <h4 className="text-[18px] font-[500]">Head Office</h4>
+                                    <h4 className="text-[18px] font-[500]">Mumbai Office</h4>
+                                    <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
+                                    <p>Contact :- 033-22534200</p>
+                                    <p>Email: ceo@indianchamber.net</p>
+                                </div>
+                                <div className='max-w-[350px]'>
+                                    <h4 className="text-[18px] font-[500]">Pune Office</h4>
                                     <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
                                     <p>Contact :- 033-22534200</p>
                                     <p>Email: ceo@indianchamber.net</p>

@@ -103,6 +103,15 @@ footer {
   );
 }
 
+#headerEvents {
+  .swiper {
+    width: fit-content !important;
+  }
+  .swiper-slide {
+    width: 100% !important;
+  }
+}
+
 #introSwiper {
   .swiper-button-prev,
   .swiper-button-next {
@@ -215,7 +224,7 @@ footer {
     content: "";
     position: absolute;
     inset: 0;
-    background: #0C134F;
+    background: #0c134f;
     z-index: 0;
   }
   & span,
@@ -228,10 +237,13 @@ footer {
 }
 
 #patronSection {
-  .swiper {
-    width: fit-content;
-    margin-inline: auto;
+  @media (min-width: 1000px) {
+    .swiper {
+      width: fit-content;
+      margin-inline: auto;
+    }
   }
+
   .swiper-pagination {
     margin-top: 10px !important;
   }
@@ -242,7 +254,7 @@ footer {
     margin-right: 0.5rem !important;
   }
   .swiper-pagination-bullet-active {
-    background-color: #F0C219 !important;
+    background-color: #f0c219 !important;
   }
 }
 
@@ -373,18 +385,18 @@ footer {
   }
 }
 
-.networkAnim{
-  background-image: url('/images/network-background.jpg');
+.networkAnim {
+  background-image: url("/images/network-background.jpg");
   animation: bgAnim 30s infinite alternate ease;
   // background-color: #f1f3f4;
   background-position: bottom left;
   background-attachment: fixed;
 }
-  @keyframes bgAnim {
-    from {  
-      background-position: top left;
-    }
-    to {
-      background-position: bottom left;
-    }
+@keyframes bgAnim {
+  from {
+    background-position: top left;
   }
+  to {
+    background-position: bottom left;
+  }
+}

@@ -19,7 +19,7 @@ const Sectors: NextComponentType = () => {
                         <p className="md:text-[20px] lg:text-[24px] font-[500] leading-normal">
                             We are currently involved in the following sectors -
                         </p>
-                        <p className='md:text-[20px] lg:text-[24px] font-[500] leading-normal'>Education, Logistics Supply Chain,
+                        <p className='md:text-[20px] lg:text-[24px] font-[500] leading-normal'>Education, Logistics, Supply Chain,
                             Tourism, IT, ITES, Startup, PSUs, Tea, Chemical, Health, Textile, Jute, Young Leaders.</p>
                     </div>
                     {/* <div className="flex mb-12 md:mt-4">

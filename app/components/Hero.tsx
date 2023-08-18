@@ -23,10 +23,10 @@ const Hero: NextComponentType = () => {
                 <div className="flex flex-col lg:flex-row gap-6 pt-20 lg:pt-36 pb-20">
                     <div>
                         <h1 className="text-[36px] font-[600] text-primary leading-none">Welcome to Association of International Businessmen</h1>
-                        <p className="text-secondary font-[500] mt-10">Facilitating Business Since 1925</p>
+                        <p className="text-secondary font-[500] mt-10">Facilitating Business Since 2021</p>
                         <p className="text-primary mt-2">Association of International Businessmen aims to make significant strides in emphasizing the need for effective use of association in various businesses. Consolidating its position as a center for  promoting bilateral trade, AIB offers a vast range of services fro augmenting skills, creating a plateform for interaction/cooperation, disseminating valuable information and data and in turn enhancing business opportunities.
                         </p>
-                        <Link href='#' className="bg-secondary text-primary font-500 inline-block mt-3 py-2 px-4">Know More</Link>
+                        <Link href='#' className="bg-secondary text-white font-500 inline-block mt-3 py-2 px-4">Know More</Link>
                     </div>
                     <div id="introSwiper" className="relative h-[300px] w-full lg:max-w-[600px]">
                         {/* <div className="absolute w-full h-full inset-0 z-10 bg-black/50"></div> */}
@@ -41,6 +41,13 @@ const Hero: NextComponentType = () => {
                             <SwiperSlide>
                                 <Image
                                     className=" h-[300px] w-full max-w-[600px] product-image object-cover"
+                                    src={slide2}
+                                    alt=""
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className=" h-[300px] w-full max-w-[600px] product-image object-cover"
                                     src={slide1}
                                     alt=""
                                 />
@@ -48,7 +55,7 @@ const Hero: NextComponentType = () => {
                             <SwiperSlide>
                                 <Image
                                     className=" h-[300px] w-full max-w-[600px] product-image object-cover"
-                                    src={slide2}
+                                    src={slide3}
                                     alt=""
                                 />
                             </SwiperSlide>

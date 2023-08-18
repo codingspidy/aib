@@ -20,15 +20,15 @@ const Patron: NextComponentType = () => {
   return (
     <section id="patronSection" className={`section pt-10 pb-7 md:pt-16 md:pb-10`}>
       <div className='innerDiv mx-auto'>
-        <h3 className='text-center sm:text-3xl text-2xl text-primary font-[600] mb-[60px] md:text-4xl'>Patron Members</h3>
+        <h3 className='text-center sm:text-3xl text-2xl text-primary font-[600] mb-[20px] md:text-4xl'>Patron Members</h3>
         <div className=''>
           <Swiper
             className='mySwiper'
             modules={[Autoplay]}
             //spaceBetween={30}
-            //slidesPerView={8}
+            slidesPerView={1}
             breakpoints={{
-              320: {
+              640: {
                 slidesPerView: 2,
                 // spaceBetween: 15,
               },
@@ -57,13 +57,13 @@ const Patron: NextComponentType = () => {
             loop
           >
             <SwiperSlide>
-              <div className='mx-6'>
-                <Image src={patron1} className="min-w-[200px] object-contain max-w-[210px] md:min-w-[250px] md:max-w-[260px]" alt='' />
+              <div className='md:mx-6'>
+                <Image src={patron1} className="object-contain min-w-[270px] max-w-[280px]" alt='' />
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='mx-6'>
-                <Image src={patron2} className="min-w-[200px] object-contain max-w-[210px] md:min-w-[250px] md:max-w-[260px]" alt='' />
+              <div className='md:mx-6'>
+                <Image src={patron2} className="object-contain min-w-[250px] max-w-[260px]" alt='' />
               </div>
             </SwiperSlide>
           </Swiper>

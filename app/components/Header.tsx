@@ -3,10 +3,11 @@ import { NextComponentType } from 'next'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import aibLogo from '../images/aib-logo.png'
-import indiaTheme from '../images/india-2030.png'
+import indiaTheme from '../images/g20-india.jpg'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faXmark, faBars, } from '@fortawesome/free-solid-svg-icons'
+import HeaderEvents from './HeaderEvents'
 
 const Header: NextComponentType = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -32,10 +33,12 @@ const Header: NextComponentType = () => {
                 </div>
                 <div className="bg-[#f1f3f4] py-2">
                     <div className="innerDiv">
-                        <div className="flex items-center justify-between">
-                            <div className="text-xs md:text-sm">
+                        <div className="flex items-center flex-wrap lg:flex-nowrap justify-between">
+                            <div className="text-xs md:text-sm flex">
                                 <span className="text-secondary font-[500]">Events:</span>
-                                <span className="ml-2">Something has happened.</span>
+                                <div className="ml-2">
+                                    <HeaderEvents />
+                                </div>
                             </div>
                             <ul className="lg:flex hidden items-center gap-x-4 text-primary text-sm">
                                 <li>
