@@ -13,136 +13,50 @@ const MembershipCharges = () => {
                         <div className="overflow-x-auto">
                             <div className="inline-block min-w-full">
                                 <div className="overflow-hidden">
-                                    <table className="min-w-full border text-sm ">
+                                    <table className="min-w-full border text-sm text-center">
                                         <thead className="border-b font-medium ">
                                             <tr>
                                                 <th
                                                     scope="col"
-                                                    className="border-r text-left px-6 py-4 "
+                                                    className="border-r px-6 py-4 "
                                                 >
-
-                                                    Subscription for Ordinary Members engaged in Manufacture and Service
+                                                    Types Of Membership
                                                 </th>
                                                 <th
                                                     scope="col"
                                                     className="border-r px-6 py-4 text-center "
                                                 >
-                                                    Amount (Rs)
+                                                    Fee for One Year
+                                                </th>
+                                                <th
+                                                    scope="col"
+                                                    className="border-r px-6 py-4 text-center "
+                                                >
+                                                    Fee for Five Year
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr className="border-b ">
                                                 <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover does not exceed Rs.1 crore                                                </td>
+                                                    Indian
+                                                </td>
+                                                <td className="whitespace-nowrap border-r px-6 py-4 ">
+                                                    Rs. 20,000
+                                                </td>
                                                 <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    7500
+                                                    Rs. 80,000
                                                 </td>
                                             </tr>
                                             <tr className="border-b ">
                                                 <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover exceeds Rs.1 crore but does not exceed Rs.2.5 crores
+                                                    Overseas
                                                 </td>
-                                                <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    14500
-                                                </td>
-                                            </tr>
-                                            <tr className="border-b ">
                                                 <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover does not exceed Rs.1 crore                                                </td>
-                                                <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    7500
-                                                </td>
-                                            </tr>
-                                            <tr className="border-b ">
-                                                <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover exceeds Rs.5 crores but does not exceed Rs.10 crores                                                </td>
-                                                <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    29500
-                                                </td>
-                                            </tr>
-                                            <tr className="border-b ">
-                                                <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover exceeds Rs.5 crores but does not exceed Rs.10 crores                                                </td>
-                                                <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    29500
-                                                </td>
-                                            </tr>
-                                            <tr className="border-b ">
-                                                <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover exceeds Rs.5 crores but does not exceed Rs.10 crores                                                </td>
-                                                <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    29500
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="overflow-x-auto mt-5">
-                            <div className="inline-block min-w-full">
-                                <div className="overflow-hidden">
-                                    <table className="min-w-full border text-sm ">
-                                        <thead className="border-b font-medium ">
-                                            <tr>
-                                                <th
-                                                    scope="col"
-                                                    className="border-r text-left px-6 py-4 "
-                                                >
-
-                                                    Subscription for Ordinary Members engaged in Manufacture and Service
-                                                </th>
-                                                <th
-                                                    scope="col"
-                                                    className="border-r px-6 py-4 text-center "
-                                                >
-                                                    Amount (Rs)
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr className="border-b ">
-                                                <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover does not exceed Rs.1 crore                                                </td>
-                                                <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    7500
-                                                </td>
-                                            </tr>
-                                            <tr className="border-b ">
-                                                <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover exceeds Rs.1 crore but does not exceed Rs.2.5 crores
+                                                    USD 300
                                                 </td>
                                                 <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    14500
-                                                </td>
-                                            </tr>
-                                            <tr className="border-b ">
-                                                <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover does not exceed Rs.1 crore                                                </td>
-                                                <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    7500
-                                                </td>
-                                            </tr>
-                                            <tr className="border-b ">
-                                                <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover exceeds Rs.5 crores but does not exceed Rs.10 crores                                                </td>
-                                                <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    29500
-                                                </td>
-                                            </tr>
-                                            <tr className="border-b ">
-                                                <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover exceeds Rs.5 crores but does not exceed Rs.10 crores                                                </td>
-                                                <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    29500
-                                                </td>
-                                            </tr>
-                                            <tr className="border-b ">
-                                                <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                    Where the turnover exceeds Rs.5 crores but does not exceed Rs.10 crores                                                </td>
-                                                <td className="whitespace-nowrap text-center border-r px-6 py-4 ">
-                                                    29500
+                                                    USD 1,200
                                                 </td>
                                             </tr>
                                         </tbody>

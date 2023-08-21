@@ -3,7 +3,7 @@ import { NextComponentType } from 'next'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import aibLogo from '../images/aib-logo.png'
-import indiaTheme from '../images/g20-india.jpg'
+import indiaTheme from '../images/g20-india-2.png'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch, faXmark, faBars, } from '@fortawesome/free-solid-svg-icons'
@@ -27,7 +27,7 @@ const Header: NextComponentType = () => {
                             <a className="inline-block -ml-1">
                                 <Image src={aibLogo} alt="" className="w-[100px] lg:w-[140px] invert brightness-0" />
                             </a>
-                            <Image src={indiaTheme} alt="" className="w-[140px] lg:w-[180px]" />
+                            <Image src={indiaTheme} alt="" className="w-[100px] lg:w-[140px]" />
                         </div>
                     </div>
                 </div>
