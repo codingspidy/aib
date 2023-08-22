@@ -5,7 +5,6 @@ import IndiaGate from "../images/india-gate.jpg"
 import CharMinar from "../images/char-minar.jpg";
 import Pune from "../images/pune.jpg";
 import Chennai from "../images/chennai.jpg";
-import UniversityLogo from "../images/university-logo.png";
 
 const States: NextComponentType = () => {
     return (

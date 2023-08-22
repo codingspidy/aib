@@ -55,7 +55,7 @@ const Header: NextComponentType = () => {
                                     Services
                                     <div
                                         className={
-                                            `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                            `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                                         }
                                         style={{ minWidth: "12rem" }}
                                     >
@@ -64,25 +64,16 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                        // onClick={(e) => e.preventDefault()}
+                                    
                                         >
                                             Business Information Services
-                                        </Link>
-                                        <Link
-                                            href="/services/certificate-of-origin"
-                                            className={
-                                                "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
-                                            }
-                                        // onClick={(e) => e.preventDefault()}
-                                        >
-                                            Certificate of Origin
                                         </Link>
                                         <Link
                                             href="/services/aib-council-of-arbitration"
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             AIB Council of Arbitration
                                         </Link>
@@ -91,7 +82,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             Investment Matchmaking
                                         </Link>
@@ -100,7 +91,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             Venue Booking
                                         </Link>
@@ -109,7 +100,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             Visa Recommendation
                                         </Link>
@@ -119,7 +110,7 @@ const Header: NextComponentType = () => {
                                     Sectors
                                     <div
                                         className={
-                                            `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                            `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                                         }
                                         style={{ minWidth: "12rem" }}
                                     >
@@ -130,7 +121,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                // onClick={(e) => e.preventDefault()}
+                                                // 
                                                 >
                                                     Education
                                                 </Link>
@@ -139,7 +130,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                // onClick={(e) => e.preventDefault()}
+                                                // 
                                                 >
                                                     Logistics
                                                 </Link>
@@ -148,7 +139,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Supply Chain
                                                 </Link>
@@ -157,7 +148,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Tourism
                                                 </Link>
@@ -166,7 +157,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     IT
                                                 </Link>
@@ -175,7 +166,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     ITES
                                                 </Link>
@@ -185,7 +176,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Startups
                                                 </Link>
@@ -194,7 +185,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     PSUs
                                                 </Link>
@@ -205,7 +196,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Tea
                                                 </Link>
@@ -214,7 +205,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Startups
                                                 </Link>
@@ -223,7 +214,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Chemical
                                                 </Link>
@@ -232,7 +223,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Health
                                                 </Link>
@@ -242,7 +233,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Startups
                                                 </Link>
@@ -251,7 +242,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Textile
                                                 </Link>
@@ -260,7 +251,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Jute
                                                 </Link>
@@ -269,7 +260,7 @@ const Header: NextComponentType = () => {
                                                     className={
                                                         "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                                     }
-                                                    onClick={(e) => e.preventDefault()}
+                                                    
                                                 >
                                                     Young Leaders
                                                 </Link>
@@ -281,7 +272,7 @@ const Header: NextComponentType = () => {
                                     States
                                     <div
                                         className={
-                                            `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                            `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                                         }
                                         style={{ minWidth: "12rem" }}
                                     >
@@ -290,7 +281,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                        // onClick={(e) => e.preventDefault()}
+                                        // 
                                         >
                                             Delhi
                                         </Link>
@@ -299,7 +290,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                        // onClick={(e) => e.preventDefault()}
+                                        // 
                                         >
                                             Kolkata
                                         </Link>
@@ -308,7 +299,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             Bangalore
                                         </Link>
@@ -317,7 +308,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             Hyderabad
                                         </Link>
@@ -326,7 +317,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             Kochi
                                         </Link>
@@ -335,7 +326,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             Chennai
                                         </Link>
@@ -344,7 +335,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             Mumbai
                                         </Link>
@@ -353,7 +344,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             Pune
                                         </Link>
@@ -363,7 +354,7 @@ const Header: NextComponentType = () => {
                                     International
                                     <div
                                         className={
-                                            `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                            `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                                         }
                                         style={{ minWidth: "12rem" }}
                                     >
@@ -372,7 +363,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                        // onClick={(e) => e.preventDefault()}
+                                        // 
                                         >
                                             International Business News
                                         </Link>
@@ -382,7 +373,7 @@ const Header: NextComponentType = () => {
                                     Membership
                                     <div
                                         className={
-                                            `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                            `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                                         }
                                         style={{ minWidth: "12rem" }}
                                     >
@@ -391,7 +382,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                        // onClick={(e) => e.preventDefault()}
+                                        // 
                                         >
                                             AIB Membership
                                         </Link>
@@ -400,7 +391,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                        // onClick={(e) => e.preventDefault()}
+                                        // 
                                         >
                                             Membership Charges
                                         </Link>
@@ -409,7 +400,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                            onClick={(e) => e.preventDefault()}
+                                            
                                         >
                                             Membership Forms
                                         </Link>
@@ -419,7 +410,7 @@ const Header: NextComponentType = () => {
                                     Publication
                                     <div
                                         className={
-                                            `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                            `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                                         }
                                         style={{ minWidth: "12rem" }}
                                     >
@@ -428,7 +419,7 @@ const Header: NextComponentType = () => {
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }
-                                        // onClick={(e) => e.preventDefault()}
+                                        // 
                                         >
                                             Newsletter
                                         </Link>
@@ -478,7 +469,7 @@ const Header: NextComponentType = () => {
                         Services
                         <div
                             className={
-                                `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                             }
                             style={{ minWidth: "12rem" }}
                         >
@@ -487,7 +478,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                            // onClick={(e) => e.preventDefault()}
+                            // 
                             >
                                 Business Information Services
                             </Link>
@@ -496,7 +487,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                            // onClick={(e) => e.preventDefault()}
+                            // 
                             >
                                 Certificate of Origin
                             </Link>
@@ -505,7 +496,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 AIB Council of Arbitration
                             </Link>
@@ -514,7 +505,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 Investment Matchmaking
                             </Link>
@@ -523,7 +514,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 Venue Booking
                             </Link>
@@ -532,7 +523,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 Visa Recommendation
                             </Link>
@@ -542,7 +533,7 @@ const Header: NextComponentType = () => {
                         States
                         <div
                             className={
-                                `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                             }
                             style={{ minWidth: "12rem" }}
                         >
@@ -551,7 +542,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                            // onClick={(e) => e.preventDefault()}
+                            // 
                             >
                                 Delhi
                             </Link>
@@ -560,7 +551,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                            // onClick={(e) => e.preventDefault()}
+                            // 
                             >
                                 Kolkata
                             </Link>
@@ -569,7 +560,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 Bangalore
                             </Link>
@@ -578,7 +569,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 Hyderabad
                             </Link>
@@ -587,7 +578,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 Kochi
                             </Link>
@@ -596,7 +587,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 Chennai
                             </Link>
@@ -605,7 +596,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 Mumbai
                             </Link>
@@ -614,7 +605,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 Pune
                             </Link>
@@ -624,7 +615,7 @@ const Header: NextComponentType = () => {
                         International
                         <div
                             className={
-                                `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                             }
                             style={{ minWidth: "12rem" }}
                         >
@@ -633,7 +624,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                            // onClick={(e) => e.preventDefault()}
+                            // 
                             >
                                 International Business News
                             </Link>
@@ -643,7 +634,7 @@ const Header: NextComponentType = () => {
                         Membership
                         <div
                             className={
-                                `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                             }
                             style={{ minWidth: "12rem" }}
                         >
@@ -652,7 +643,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                            // onClick={(e) => e.preventDefault()}
+                            // 
                             >
                                 AIB Membership
                             </Link>
@@ -661,7 +652,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                            // onClick={(e) => e.preventDefault()}
+                            // 
                             >
                                 Membership Charges
                             </Link>
@@ -670,7 +661,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                                onClick={(e) => e.preventDefault()}
+                                
                             >
                                 Membership Forms
                             </Link>
@@ -680,7 +671,7 @@ const Header: NextComponentType = () => {
                         Publication
                         <div
                             className={
-                                `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                `hidden hover:block group-hover:block bg-white absolute top-[33px] left-2 text-base z-10 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                             }
                             style={{ minWidth: "12rem" }}
                         >
@@ -689,7 +680,7 @@ const Header: NextComponentType = () => {
                                 className={
                                     "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                 }
-                            // onClick={(e) => e.preventDefault()}
+                            // 
                             >
                                 Newsletter
                             </Link>

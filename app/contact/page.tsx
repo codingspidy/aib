@@ -8,66 +8,9 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLocationPin, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import ContactForm from '../components/ContactForm';
 
 const Contact: NextPage = () => {
-    const [firstName, setFirstName] = useState<string>('');
-    const [lastName, setLastName] = useState<string>('');
-    const [email, setEmail] = useState<string>('');
-    const [subject, setSubject] = useState<string>('');
-    const [message, setMessage] = useState('');
-    const [userEmailError, setUserEmailError] = useState<string>('');
-    const [subjectError, setSubjectError] = useState<string>('');
-    const [loading, setLoading] = useState<boolean>(false);
-    const [formSent, setFormSent] = useState<boolean>(false);
-
-    const handleSubmit = async () => {
-        if (email.length == 0) {
-            return setUserEmailError('Email is required');
-            // } else if (email.length > 0 && !validateEmail(email)) {
-            // 	return setUserEmailError('Please enter a valid email address');
-            // } else {
-            setUserEmailError('');
-        }
-
-        const clearForm = () => {
-            setFirstName('');
-            setLastName('');
-            setEmail('');
-            setSubject('');
-            setMessage('');
-        };
-
-        if (subject.length == 0) {
-            return setSubjectError('Please enter contact subject!');
-        } else {
-            setSubjectError('');
-        }
-
-        // try {
-        // 	setLoading(true);
-        // 	const response = await axios.post(`${strapi_end_point}/api/contacts`, {
-        // 		data: {
-        // 			firstName: firstName,
-        //             lastName: lastName,
-        // 			email: email,
-        // 			subject: subject,
-        // 			message: message,
-        // 		},
-        // 	});
-        // 	setLoading(false);
-        // 	setFormSent(true);
-        // 	clearForm();
-        // 	setTimeout(() => {
-        // 		setFormSent(false);
-        // 	}, 5000);
-        // } catch (error) {
-        // 	setLoading(true);
-        // 	if (axios.isAxiosError(error)) {
-        // 		if (error.response?.data.error.message.toLowerCase().includes('email')) return setUserEmailError(error.response?.data.error.message);
-        // 	}
-        // 	setLoading(false);
-        // }
-    };
 
     return (
         <>
@@ -112,146 +55,59 @@ const Contact: NextPage = () => {
                                 </ul>
                             </div>
 
-                            <div className=''>
-                                <h3 className='text-primary md:text-4xl text-3xl font-semibold mb-1'>Contact us here</h3>
-                                <p className='text-[#444444] text-lg font-medium mb-5'>Looking forward to hear from you!</p>
-                                <div className='mb-3 flex flex-col lg:flex-row gap-3'>
-                                    <input
-                                        className='placeholder:text-slate-400 block w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
-                                        placeholder='First Name'
-                                        type='text'
-                                        id='name'
-                                        name='name'
-                                        value={firstName}
-                                        onChange={(e) => setFirstName(e.target.value)}
-                                    />
-                                    <input
-                                        className='placeholder:text-slate-400 block w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
-                                        placeholder='Last Name'
-                                        type='text'
-                                        id='name'
-                                        name='name'
-                                        value={lastName}
-                                        onChange={(e) => setLastName(e.target.value)}
-                                    />
-                                </div>
-                                <div className='mb-3'>
-                                    <input
-                                        className='placeholder:text-slate-400 block w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
-                                        placeholder='Email ID'
-                                        type='email'
-                                        id='email'
-                                        name='email'
-                                        value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                    />
-                                    {/* <span className='text-[#E63946] mt-1 ml-3 text-xs flex align-center'>
-									{userEmailError.length > 0 && (
-										<>
-											<TiInfo className='text-sm mr-1' />
-											{userEmailError}
-										</>
-									)}
-								</span> */}
-                                </div>
-                                <div className='mb-3'>
-                                    <input
-                                        className='placeholder:text-slate-400 block w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
-                                        placeholder='Subject'
-                                        type='text'
-                                        name='subject'
-                                        id='subject'
-                                        value={subject}
-                                        onChange={(e) => setSubject(e.target.value)}
-                                    />
-                                    {/* <span className='text-[#E63946] mt-1 ml-3 text-xs flex align-center'>
-									{subjectError.length > 0 && (
-										<>
-											<TiInfo className='text-sm mr-1' />
-											{subjectError}
-										</>
-									)}
-								</span> */}
-                                </div>
-                                <div className='mb-3'>
-                                    <textarea
-                                        rows={7}
-                                        className='placeholder:text-slate-400 block w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1'
-                                        id='message'
-                                        placeholder='Your Message'
-                                        name='message'
-                                        value={message}
-                                        onChange={(e) => setMessage(e.target.value)}></textarea>
-                                </div>
-                                {/* <span className='text-yellow block my-6 text-base'>{formSent && <>You&#39;re response has been saved! Our team will reach out to you soon.</>}</span> */}
-                                <div className='text-center mb-3'>
-                                    <button onClick={handleSubmit} type='submit' className='bg-primary text-white px-12 rounded-full py-3 flex items-center justify-center'> { /* onClcik={handleContact} disabled={loading} */}
-                                        {loading && <span className='spinner-loader mr-2'></span>}
-                                        Submit
-                                    </button>
-                                </div>
-                                {/* <p>
-								By tapping submit, you agree to the
-								<Link href='/termsofservice'>
-									<span className='underline'> Terms of Service </span>
-								</Link>
-								and
-								<Link href='/privacypolicy'>
-									<span className='underline'> Privacy Policy </span>
-								</Link>
-							</p> */}
-                            </div>
+                            <ContactForm />
                         </div>
                         <div className='mt-20'>
                             <h3 className='text-primary md:text-4xl text-3xl font-semibold mb-1'>Our Offices</h3>
                             <div className='flex flex-wrap gap-10 mt-6'>
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Head Office</h4>
-                                    <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
-                                    <p>Contact :- 033-22534200</p>
-                                    <p>Email: ceo@indianchamber.net</p>
+                                    <p>SD-154, Sector-45, Noida -201303, Uttar Pradesh</p>
+                                    <p>Contact: +91 9999890071</p>
+                                    <p>Email: info@aibusinessmen.com</p>
                                 </div>
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Hyderabad Office</h4>
-                                    <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
-                                    <p>Contact :- 033-22534200</p>
-                                    <p>Email: ceo@indianchamber.net</p>
-                                </div>
-                                <div className='max-w-[350px]'>
-                                    <h4 className="text-[18px] font-[500]">Chennai Office</h4>
-                                    <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
-                                    <p>Contact :- 033-22534200</p>
-                                    <p>Email: ceo@indianchamber.net</p>
-                                </div>
-                                <div className='max-w-[350px]'>
-                                    <h4 className="text-[18px] font-[500]">Kochi Office</h4>
-                                    <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
-                                    <p>Contact :- 033-22534200</p>
-                                    <p>Email: ceo@indianchamber.net</p>
+                                    <p>Plot No. 497, D.No. 8-1-284, Third Floor, OU Colony, Shaikpet, Hydrabad - 500008</p>
+                                    <p>Contact: +91 9059458075</p>
+                                    <p>Email: zhenis@aibusinessmen.com</p>
                                 </div>
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Kolkata Office</h4>
-                                    <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
-                                    <p>Contact :- 033-22534200</p>
-                                    <p>Email: ceo@indianchamber.net</p>
-                                </div>
-                                <div className='max-w-[350px]'>
-                                    <h4 className="text-[18px] font-[500]">Mumbai Office</h4>
-                                    <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
-                                    <p>Contact :- 033-22534200</p>
-                                    <p>Email: ceo@indianchamber.net</p>
-                                </div>
-                                <div className='max-w-[350px]'>
-                                    <h4 className="text-[18px] font-[500]">Pune Office</h4>
-                                    <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
-                                    <p>Contact :- 033-22534200</p>
-                                    <p>Email: ceo@indianchamber.net</p>
+                                    <p> 5/4, Arena Housing, New Town, Kolkata-700156</p>
+                                    <p>Contact: +91 9599032139</p>
+                                    <p>Email: mdyaseen@aibusinessmen.com</p>
                                 </div>
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Bangalore Office</h4>
-                                    <p>ICC Towers, 4 India Exchange Place, Kolkata-700001</p>
-                                    <p>Contact :- 033-22534200</p>
-                                    <p>Email: ceo@indianchamber.net</p>
+                                    <p>607, Near Akshay Orchid, 13th Cross, Vayatikaya
+                                        HBCS layout, Nagawara, Bangalore-560045</p>
+                                    <p>Contact: +91 9972065556</p>
+                                    <p>Email: mabdulbadith@aibusinessmen.com</p>
+                                </div>
+                                <div className='max-w-[350px]'>
+                                    <h4 className="text-[18px] font-[500]">Mumbai Office</h4>
+                                    <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                                    <p>Contact: XXXXXXXXXX</p>
+                                    <p>Email: XXXXXXXXXXXX</p>
+                                </div>
+                                <div className='max-w-[350px]'>
+                                    <h4 className="text-[18px] font-[500]">Pune Office</h4>
+                                    <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                                    <p>Contact: XXXXXXXX</p>
+                                    <p>Email: XXXXXXXXXXXX</p>
+                                </div>
+                                <div className='max-w-[350px]'>
+                                    <h4 className="text-[18px] font-[500]">Chennai Office</h4>
+                                    <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                                    <p>Contact: XXXXXXXXX</p>
+                                    <p>Email: XXXXXXXXXXXX</p>
+                                </div>
+                                <div className='max-w-[350px]'>
+                                    <h4 className="text-[18px] font-[500]">Kochi Office</h4>
+                                    <p>XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                                    <p>Contact: XXXXXXXXX</p>
+                                    <p>Email: XXXXXXXXXXXXXXX</p>
                                 </div>
                             </div>
                         </div>
@@ -264,53 +120,50 @@ const Contact: NextPage = () => {
                                             <tbody>
                                                 <tr className="border-b ">
                                                     <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                        <h5 className="text-[18px] font-[500]">Director General</h5>
-                                                        <p>Dr. Rajeev Singh</p>
-                                                        <p className="mt-4">Email – ceo@indianchamber.net</p>
+                                                        <h5 className="text-[18px] font-[500]">Secretary</h5>
+                                                        <p>Altaf Hussain</p>
+                                                        <p className="mt-4">Email – altaf.hussain@aibusinessmen.com</p>
+                                                        <p>Phone - +91 9671658857</p>
                                                     </td>
                                                     <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                        <h5 className="text-[18px] font-[500]">Director General</h5>
-                                                        <p>Dr. Rajeev Singh</p>
-                                                        <p className="mt-4">Email – ceo@indianchamber.net</p>
+                                                        <h5 className="text-[18px] font-[500]">Regional Director</h5>
+                                                        <p>Zhenis Telemissov</p>
+                                                        <p className="mt-4">Email – zhenis@aibusinessmen.com</p>
+                                                        <p>91 9059458075</p>
                                                     </td>
                                                     <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                        <h5 className="text-[18px] font-[500]">Director General</h5>
-                                                        <p>Dr. Rajeev Singh</p>
-                                                        <p className="mt-4">Email – ceo@indianchamber.net</p>
-                                                    </td>
-                                                </tr>
-                                                <tr className="border-b ">
-                                                    <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                        <h5 className="text-[18px] font-[500]">Director General</h5>
-                                                        <p>Dr. Rajeev Singh</p>
-                                                        <p className="mt-4">Email – ceo@indianchamber.net</p>
-                                                    </td>
-                                                    <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                        <h5 className="text-[18px] font-[500]">Director General</h5>
-                                                        <p>Dr. Rajeev Singh</p>
-                                                        <p className="mt-4">Email – ceo@indianchamber.net</p>
-                                                    </td>
-                                                    <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                        <h5 className="text-[18px] font-[500]">Director General</h5>
-                                                        <p>Dr. Rajeev Singh</p>
-                                                        <p className="mt-4">Email – ceo@indianchamber.net</p>
+                                                        <h5 className="text-[18px] font-[500]">Regional Director</h5>
+                                                        <p>Mohammad Yaseen Malik</p>
+                                                        <p className="mt-4">Email – mdyaseen@aibusinessmen.com</p>
+                                                        <p>Phone: +91 9599032139</p>
                                                     </td>
                                                 </tr>
                                                 <tr className="border-b ">
                                                     <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                        <h5 className="text-[18px] font-[500]">Director General</h5>
-                                                        <p>Dr. Rajeev Singh</p>
-                                                        <p className="mt-4">Email – ceo@indianchamber.net</p>
+                                                        <h5 className="text-[18px] font-[500]">Regional Director</h5>
+                                                        <p>Muhammed Saheer</p>
+                                                        <p className="mt-4">Email – saheer@aibusinessmen.com</p>
+                                                        <p>Phone: +91 959903213</p>
                                                     </td>
                                                     <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                        <h5 className="text-[18px] font-[500]">Director General</h5>
-                                                        <p>Dr. Rajeev Singh</p>
-                                                        <p className="mt-4">Email – ceo@indianchamber.net</p>
+                                                        <h5 className="text-[18px] font-[500]">Regional Director</h5>
+                                                        <p>Aadil Aiman S</p>
+                                                        <p className="mt-4">Email – aadilaiman@aibusinessmen.com</p>
+                                                        <p>Phone: +91 9566898486</p>
                                                     </td>
                                                     <td className="whitespace-nowrap border-r px-6 py-4 ">
-                                                        <h5 className="text-[18px] font-[500]">Director General</h5>
-                                                        <p>Dr. Rajeev Singh</p>
-                                                        <p className="mt-4">Email – ceo@indianchamber.net</p>
+                                                        <h5 className="text-[18px] font-[500]">Regional Director</h5>
+                                                        <p>Suhail Akram</p>
+                                                        <p className="mt-4">Email – akram@aibusinessmen.com</p>
+                                                        <p>Phone:  +91 9911377178</p>
+                                                    </td>
+                                                </tr>
+                                                <tr className="border-b">
+                                                    <td className="whitespace-nowrap border-r px-6 py-4 ">
+                                                        <h5 className="text-[18px] font-[500]">Regional Director</h5>
+                                                        <p>Mohammad Abdul Basith</p>
+                                                        <p className="mt-4">Email – mabdulbadith@aibusinessmen.com</p>
+                                                        <p>Phone: +91 9972065556</p>
                                                     </td>
                                                 </tr>
                                             </tbody>

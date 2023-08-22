@@ -32,12 +32,12 @@ const Footer: NextComponentType = () => {
                             <ul className='flex lg:mb-0 mb-3 text-white'>
                                 <li className='mr-6 text-white'>Follow us</li>
                                 <li className='mr-4'>
-                                    <Link href="#" target='_blank' rel='noreferrer' className='text-primary text-xl'>
+                                    <Link href="https://www.facebook.com/profile.php?id=100089558829752&mibextid=LQQJ4d" target='_blank' rel='noreferrer' className='text-primary text-xl'>
                                         <FontAwesomeIcon icon={faFacebook} className="text-white" />
                                     </Link>
                                 </li>
                                 <li className='mr-4'>
-                                    <Link href="#" target='_blank' rel='noreferrer' className='text-primary text-xl'>
+                                    <Link href="https://instagram.com/ai.businessmen?igshid=OGQ5ZDc2ODk2ZA==" target='_blank' rel='noreferrer' className='text-primary text-xl'>
                                         <FontAwesomeIcon icon={faInstagram} className="text-white" />
                                     </Link>
                                 </li>

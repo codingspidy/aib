@@ -478,12 +478,12 @@ const MembershipForm = () => {
                 </div>
             </div>
             <p className='font-[600] mt-12'>Subscribe now and avail of a free two-month trial. You can cancel your subscription anytime.</p>
-            <div className='mt-6 space-y-3'>
+            <div className='mt-4 space-y-3'>
                 <div className="bg-primary py-3 px-4 text-white mb-8">DOCUMENTS REQUIRED: Latest Balance Sheet, PAN No., Registration of Company, Address Proof - Telephone Bill/Electricity Bill</div>
                 <div className=''>
                     I/We hereby subscribe to be a (see membership table)
                     <input
-                        className='placeholder:text-slate-400 -mt-7 border-b border-b-slate-300 py-2 px-4 shadow-sm focus:outline-none focus:ring-1'
+                        className='placeholder:text-slate-400 -mt-12 border-b border-b-slate-300 py-2 px-4 focus:outline-none focus:ring-1'
                         placeholder=''
                         type='text'
                         id='name'
@@ -499,7 +499,7 @@ const MembershipForm = () => {
                     {loading && <span className='spinner-loader mr-2'></span>}
                     Submit
                 </button>
-                </div>
+            </div>
         </div>
     )
 }

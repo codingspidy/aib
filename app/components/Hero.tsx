@@ -11,7 +11,9 @@ import slide1 from "../images/event1.jpg";
 import slide2 from "../images/event2.jpg";
 import slide3 from "../images/event3.jpg";
 import slide4 from "../images/event4.jpg";
-import slide5 from "../images/event5.jpg";
+import slide5 from "../images/event6.jpg";
+import slide6 from "../images/event7.jpg";
+import slide7 from "../images/event8.jpg";
 
 import Image from "next/image";
 import Link from 'next/link';
@@ -70,6 +72,20 @@ const Hero: NextComponentType = () => {
                                 <Image
                                     className="h-[300px] w-full max-w-[600px] product-image object-cover"
                                     src={slide5}
+                                    alt=""
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="h-[300px] w-full max-w-[600px] product-image object-cover object-top"
+                                    src={slide6}
+                                    alt=""
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="h-[300px] w-full max-w-[600px] product-image object-cover"
+                                    src={slide7}
                                     alt=""
                                 />
                             </SwiperSlide>
