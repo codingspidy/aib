@@ -69,21 +69,21 @@ const Contact: NextPage = () => {
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Hyderabad Office</h4>
                                     <p>Plot No. 497, D.No. 8-1-284, Third Floor, OU Colony, Shaikpet, Hydrabad - 500008</p>
-                                    <p>Contact: +91 9059458075</p>
-                                    <p>Email: zhenis@aibusinessmen.com</p>
+                                    {/* <p>Contact: +91 9059458075</p>
+                                    <p>Email: zhenis@aibusinessmen.com</p> */}
                                 </div>
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Kolkata Office</h4>
                                     <p> 5/4, Arena Housing, New Town, Kolkata-700156</p>
-                                    <p>Contact: +91 9599032139</p>
-                                    <p>Email: mdyaseen@aibusinessmen.com</p>
+                                    {/* <p>Contact: +91 9599032139</p>
+                                    <p>Email: mdyaseen@aibusinessmen.com</p> */}
                                 </div>
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Bangalore Office</h4>
                                     <p>607, Near Akshay Orchid, 13th Cross, Vayatikaya
                                         HBCS layout, Nagawara, Bangalore-560045</p>
-                                    <p>Contact: +91 9972065556</p>
-                                    <p>Email: mabdulbadith@aibusinessmen.com</p>
+                                    {/* <p>Contact: +91 9972065556</p>
+                                    <p>Email: mabdulbadith@aibusinessmen.com</p> */}
                                 </div>
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Mumbai Office</h4>
@@ -93,21 +93,17 @@ const Contact: NextPage = () => {
                                 </div>
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Pune Office</h4>
-                                    <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                                    <p>Contact: XXXXXXXX</p>
-                                    <p>Email: XXXXXXXXXXXX</p>
+                                    <p>Plot No. 1, Sarathi Society, Shanker Seth Road, 
+Camp, Pune, Maharashtra - 411001</p>
                                 </div>
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Chennai Office</h4>
-                                    <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                                    <p>Contact: XXXXXXXXX</p>
-                                    <p>Email: XXXXXXXXXXXX</p>
+                                    <p>No. 9/5, Mayor Sivaraj Street, Royapettah,
+Chennai - 600014</p>
                                 </div>
                                 <div className='max-w-[350px]'>
                                     <h4 className="text-[18px] font-[500]">Kochi Office</h4>
-                                    <p>XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-                                    <p>Contact: XXXXXXXXX</p>
-                                    <p>Email: XXXXXXXXXXXXXXX</p>
+                                    <p>Calicut</p>
                                 </div>
                             </div>
                         </div>
