@@ -47,7 +47,7 @@ const Header: NextComponentType = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="px-1 inline-block cursor-pointer" href="#">
+                                    <Link className="px-1 inline-block cursor-pointer" href="/about">
                                         About
                                     </Link>
                                 </li>
@@ -415,7 +415,7 @@ const Header: NextComponentType = () => {
                                         style={{ minWidth: "12rem" }}
                                     >
                                         <Link
-                                            href="#"
+                                            href="/publication/newsletter"
                                             className={
                                                 "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                                             }

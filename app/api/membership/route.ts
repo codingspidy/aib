@@ -73,7 +73,7 @@ export async function POST(request: Request) {
 `;
   const mailData = {
     from: "myaibbot@gmail.com",
-    to: "info@aibusinessmen.com",
+    to: "aibbusinessmen@gmail.com",
     subject: `Membership Application from ${res.companyName}`,
     text: "Hello",
     html: emailContent,

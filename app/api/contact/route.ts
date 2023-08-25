@@ -18,12 +18,17 @@ export async function POST(request: Request) {
     to: "aibbusinessmen@gmail.com",
     subject: `Message From ${res.firstName}`,
     text: res.message,
-    html: `<div>${res.message}</div>`,
+    html: `<div>
+    <div>From: ${res.email}</div>
+    <div>Subject: ${res.subject}</div>
+    <h3>Message:</h3>
+    <div>${res.message}</div>
+    </div>`,
   };
   transporter.sendMail(mailData, function (err: any, info: any) {
     if (err) console.log(err);
     else console.log(info);
   });
-//   res.status(200);
+  //   res.status(200);
   return NextResponse.json({ res });
 }

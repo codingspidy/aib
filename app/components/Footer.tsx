@@ -104,37 +104,37 @@ const Footer: NextComponentType = () => {
                                 className='footerLink'
                             >
                                 <li className='mb-2'>
-                                    <Link href="#" target='_blank' className='text-white text-sm'>
+                                    <Link href="/" target='_blank' className='text-white text-sm'>
                                         Home
                                     </Link>
                                 </li>
                                 <li className='mb-2'>
-                                    <Link href="#" target='_blank' className='text-white text-sm'>
-                                        The Chamber
+                                    <Link href="/about" target='_blank' className='text-white text-sm'>
+                                        About
                                     </Link>
                                 </li>
                                 <li className='mb-2'>
-                                    <Link href="#" target='_blank' className='text-white text-sm'>
+                                    <Link href="/services/businesss-information-services" target='_blank' className='text-white text-sm'>
                                         Services
                                     </Link>
                                 </li>
                                 <li className='mb-2'>
-                                    <Link href="#" target='_blank' className='text-white text-sm'>
+                                    <Link href="/international/international-business-news" target='_blank' className='text-white text-sm'>
                                         International
                                     </Link>
                                 </li>
                                 <li className='mb-2'>
-                                    <Link href="#" target='_blank' className='text-white text-sm'>
+                                    <Link href="/membership" target='_blank' className='text-white text-sm'>
                                         Membership
                                     </Link>
                                 </li>
                                 <li className='mb-2'>
-                                    <Link href="#" target='_blank' className='text-white text-sm'>
+                                    <Link href="/publication/newsletter" target='_blank' className='text-white text-sm'>
                                         Publication
                                     </Link>
                                 </li>
                                 <li className='mb-2'>
-                                    <Link href="#" target='_blank' className='text-white text-sm'>
+                                    <Link href="/contact" target='_blank' className='text-white text-sm'>
                                         Contact
                                     </Link>
                                 </li>
