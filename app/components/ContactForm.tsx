@@ -14,6 +14,7 @@ const ContactForm = () => {
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault()
+        setLoading(true);
         console.log('Sending');
         let data = {
             firstName,
@@ -32,6 +33,7 @@ const ContactForm = () => {
         }).then((res) => {
             console.log('Response received')
             if (res.status === 200) {
+                setLoading(false);
                 console.log('Response succeeded!')
                 setSubmitted(true)
                 setFirstName('')

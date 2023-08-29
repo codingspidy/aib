@@ -400,3 +400,20 @@ footer {
     background-position: bottom left;
   }
 }
+
+.spinner-loader {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: -0.125em;
+  border: 0.25em dotted #ffffff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 0.75s linear infinite spinner-loader;
+  animation: 0.75s linear infinite spinner-loader;
+}
+@-webkit-keyframes spinner-loader {
+  to {
+    transform: rotate(360deg);
+  }
+}

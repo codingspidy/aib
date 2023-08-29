@@ -41,6 +41,7 @@ const MembershipForm = () => {
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
+        setLoading(true);
         console.log('Sending')
         let data = {
             companyName,
@@ -89,6 +90,7 @@ const MembershipForm = () => {
         }).then((res) => {
             console.log('Response received')
             if (res.status === 200) {
+                setLoading(false);
                 console.log('Response succeeded!')
                 setCompanyName('')
                 setAddress('')

@@ -125,7 +125,7 @@ Chennai - 600014</p>
                                                         <h5 className="text-[18px] font-[500]">Regional Director</h5>
                                                         <p>Zhenis Telemissov</p>
                                                         <p className="mt-4">Email – zhenis@aibusinessmen.com</p>
-                                                        <p>91 9059458075</p>
+                                                        <p>Phone - +91 9059458075</p>
                                                     </td>
                                                     <td className="whitespace-nowrap border-r px-6 py-4 ">
                                                         <h5 className="text-[18px] font-[500]">Regional Director</h5>

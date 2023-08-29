@@ -33,7 +33,7 @@ const Header: NextComponentType = () => {
                 </div>
                 <div className="bg-[#f1f3f4] py-2">
                     <div className="innerDiv">
-                        <div className="flex items-center flex-wrap lg:flex-nowrap justify-between">
+                        <div className="flex items-center md:flex-wrap lg:flex-nowrap justify-between">
                             <div className="text-xs md:text-sm flex">
                                 <span className="text-secondary font-[500]">Events:</span>
                                 <div className="ml-2">
