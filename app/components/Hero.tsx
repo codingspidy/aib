@@ -14,6 +14,11 @@ import slide4 from "../images/event4.jpg";
 import slide5 from "../images/event6.jpg";
 import slide6 from "../images/event7.jpg";
 import slide7 from "../images/event8.jpg";
+import slide8 from "../images/event9.jpg";
+import slide9 from "../images/event10.jpg";
+import slide10 from "../images/event11.jpg";
+import slide11 from "../images/event12.jpg";
+import slide12 from "../images/event13.jpg";
 
 import Image from "next/image";
 import Link from 'next/link';
@@ -40,6 +45,41 @@ const Hero: NextComponentType = () => {
                                 delay: 4000,
                             }}
                         >
+                            <SwiperSlide>
+                                <Image
+                                    className="h-[300px] w-full max-w-[600px] product-image object-cover object-top"
+                                    src={slide8}
+                                    alt=""
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="h-[300px] w-full max-w-[600px] product-image object-cover"
+                                    src={slide9}
+                                    alt=""
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="h-[300px] w-full max-w-[600px] product-image object-cover object-top"
+                                    src={slide10}
+                                    alt=""
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="h-[300px] w-full max-w-[600px] product-image object-cover"
+                                    src={slide11}
+                                    alt=""
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="h-[300px] w-full max-w-[600px] product-image object-cover"
+                                    src={slide12}
+                                    alt=""
+                                />
+                            </SwiperSlide>
                             <SwiperSlide>
                                 <Image
                                     className=" h-[300px] w-full max-w-[600px] product-image object-cover"
@@ -89,6 +129,7 @@ const Hero: NextComponentType = () => {
                                     alt=""
                                 />
                             </SwiperSlide>
+
                         </Swiper>
                     </div>
                 </div>
