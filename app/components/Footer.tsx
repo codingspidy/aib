@@ -85,8 +85,8 @@ const Footer: NextComponentType = () => {
                             >
                                 <li className='mb-2'>
                                     <p>Association of International Businessmen
-                                    SD-154, Sector-45, Noida-201303,</p>
-                                     UP, India
+                                    331-B, Nai Basti, Okhla, Jamia Nagar, Delhi,</p>
+                                    New Delhi, Delhi, India, 110025
                                 </li>
                                 <li className='mb-2'>
                                     Mobile : +91-8920962397
